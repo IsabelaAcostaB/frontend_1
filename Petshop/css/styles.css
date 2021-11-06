@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+section.Roboto{
+    font-family: 'Roboto', sans-serif
+}
+
+#barra{
+    background-color: #222222;
+    color: ghostwhite;
+    font-size: 10px;
+}
+
+#menu{
+    background-color:#F0A83E;
+    color: white;
+}
+.bienvenida{
+    color:#3C2313;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+
+section.h2{
+    color:#3C2313;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+.img_principal{
+    width:100%;
+}
+
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.precios {
+    color: #F0A83E;
+}
+
+section.fondo_blanco¨{
+    background-color: ghostwhite;
+}
+
+#fondo_blanco{
+    background-color: rgb(251,250,246);
+}
+
+.derechosres {
+    background-color: black;
+    color: white;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    font-size: 10px;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+footer.h2{
+    font-size: 20px;
+}
+footer{
+    background-color: #3C2313;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+
+}
+

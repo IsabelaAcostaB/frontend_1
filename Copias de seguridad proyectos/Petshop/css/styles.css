@@ -33,14 +33,18 @@ section.h2{
     font-size: 40px;
 }
 
-.naranja{
-    background-color: orange;
-    color: white;
-    text-align: center;
-}
+
 
 .img_principal{
     width:100%;
+}
+
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .precios {
@@ -75,19 +79,6 @@ footer{
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
+
 }
- .center{
-     text-align: center;
- }
-
-.sobre{
-    position:relative;
-    bottom: 700px;
-}
- .top_corner {
-    position: l;
- }
-
-
-
 

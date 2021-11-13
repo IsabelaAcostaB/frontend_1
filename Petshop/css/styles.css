@@ -2,92 +2,340 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 
-section.Roboto{
-    font-family: 'Roboto', sans-serif
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
-#barra{
+.container{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    text-align: center;
+    
+}
+
+/*Header*/
+
+#barra_idioma{
     background-color: #222222;
+    box-sizing: border-box;
     color: ghostwhite;
+    font-family: 'Roboto', sans-serif;
     font-size: 10px;
+    padding: 5px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #menu{
     background-color:#F0A83E;
     color: white;
-}
-.bienvenida{
-    color:#3C2313;
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    text-align: center;
-}
-.center{
-    text-align: center;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-section.h2{
+ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+
+/*Main*/
+
+/* Imagen principal y texto sobrepuesto*/
+
+
+section div.container img{
+    width:100%;
+    
+}
+
+
+div.container{
+    position: relative;
+}
+
+.letter_bienvenida{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 50px;
+    
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    bottom: 105px;
+    left:63%
+}
+
+div.letter_bienvenida h2 {
+    background-color: white;
+    border-radius: 5px;
+    color:#3C2313;
+    font-size: 30px;
+    font-weight: normal;
+    height: 54px;
+    padding: 0px 10px;
+    width: 365px;
+
+    display: flex;
+    align-items: center;
+}
+
+.naranja{
+    background: #F0A83E;
+    border-radius: 5px;
+    color: white; 
+    margin:20px;
+    padding: 15px 23px;
+}
+
+
+
+
+/* Productos destacados */
+
+.h2{
     color:#3C2313;
     font-family:'Roboto', sans-serif;
     text-align: center;
     font-size: 40px;
+    position: relative;
 }
 
-.naranja{
-    background-color: orange;
-    color: white;
+.bar{
+    color:#666666;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+}
+
+/* Productos */
+
+#fondo_blanco{
+    background-color: rgb(251,250,246);
+    margin: 21.97px;
     text-align: center;
+    width: 265px;
 }
-
-.img_principal{
-    width:100%;
+ section.productos{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .precios {
     color: #F0A83E;
 }
 
-section.fondo_blanco¨{
-    background-color: ghostwhite;
+/* Contactanos */ 
+
+div.contacto {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 70px;
 }
 
-#fondo_blanco{
-    background-color: rgb(251,250,246);
+div.contacto h2{
+    color: #3C2313;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 20px;
+
 }
 
-.derechosres {
+div.datos div{
+    background-color:#3C2313;
+    border-radius: 15px;
+    color: #A0A0A0;
+    font-size: 9px;
+    font-weight: 400;
+    height: 40px;
+    margin:10px;
+    padding: 15px;
+    width: 340px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+div.buttons{
+    display: flex;
+    margin-top: 30px; 
+    justify-content: space-between;
+}
+
+div.reset{
+    background: #8A8787;
+    border-radius: 15px;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    height: 34px;
+    margin-right: 5px;
+    width: 110px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div.send{
+    background: #F0A83E;
+    border-radius: 15px;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    height: 34px;
+    width: 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Footer*/
+
+
+/* Banner suscripción */
+.footer1{
+    background-color: #F0A83E;
+    color:white;
+    font-weight: 700;
+    height:60px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.news{
+    display: flex;
+    align-items: center;
+}
+
+
+div.list{
+    display: flex;
+    flex-direction: column;
+}
+
+section div.news img{
+    margin-right: 20px;
+}
+
+div.img{
+    margin: 19.86px 10px 19.86px 23px;
+}
+
+div.h2{
+    color: white;
+    margin-left: 10px;
+}
+
+div.email{
+    background-color:white;
+    border-radius: 15px;
+    color: #A0A0A0;
+    font-size: 9px;
+    font-weight: 400;
+    height: 40px;
+    width: 271px;
+
+    display: flex;
+    align-items: center;
+}
+
+div.email p{
+    margin-left: 8px;
+}
+
+div.subscribe{
+    background-color: #3C2313;
+    border-radius: 15px;
+    color: white;
+    margin: 13px 47px 13px 5px ;
+    font-size: 9px;
+    font-weight: 700;
+    height: 34px; 
+    width: 70px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Banner contacto, location y e-mail */
+
+footer h2{
+    font-size: 20px;
+}
+
+.footer2{
+    background-color: #3C2313;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    height: 284px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon{
+    display: flex;
+    margin-top:23px;
+    margin-left: 70px;
+}
+div.icon div{
+    display: inline-flex;
+    margin-left: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+div.icon span{
+    color: #8A8787;
+}
+
+div.logo{
+    margin-right: 70px;
+    margin-left: 0;
+}
+
+.derechos {
     background-color: black;
     color: white;
     font-family:'Roboto', sans-serif;
     text-align: center;
     font-size: 10px;
+    padding: 5px;
 }
-
-.roboto {
-    font-family: 'Roboto', sans-serif;
-}
-
-footer.h2{
-    font-size: 20px;
-}
-footer{
-    background-color: #3C2313;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 10px;
-}
- .center{
-     text-align: center;
- }
-
-.sobre{
-    position:relative;
-    bottom: 700px;
-}
- .top_corner {
-    position: l;
- }
-
-
 
 

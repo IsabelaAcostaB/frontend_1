@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <p class="banner_discount">20% de descuento en todos los productos!</p>
+        </div>
+        <div>
+            <h1 class="title">Heroes</h1>
+        </div>
+        <div>
+            <ul type="none" class="menu">
+                <li>Contacto</li>
+                <li>Registrarme</li>
+                <li>Ingresar</li>
+            </ul>
+        </div>
+    </header>
+    <br><br><br>
+    <main>
+        <div class="container">
+            <section class="form">
+                <div class="title_form">
+                    <h3>Añade tu Super!</h3>
+                    <p>Agrega tu presonaje favorito completando las opciones</p>
+                </div>
+                <div class="form">
+                    <div class="form1">
+                        <form action="registro" method="get">
+                            <div class="element">
+                                <label for="nombre">*Nombre</label>
+                                <input type="text" name="nombre" id="nombre" class="campo">
+                            </div>
+
+                            <div class="element">
+                                <label for="fecha">Fecha</label>
+                                <input type="date" name="fecha" id="fecha" class="campo">
+                            </div>
+
+                            <div class="element">
+                                <label for="comentario"></label>
+                                <textarea name="comentario" id="comentario" value="Descripción"
+                                    class="campo content">Descripcion</textarea>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="form1">
+                        <form action="caracteristicas" method="get">
+                            <div class="element">
+                                <label for="especie">*Especie</label>
+                                <select name="especie" class="campo content">
+                                    <option value="especie">Especie</option>
+                                    <option value="especie">Animal</option>
+                                    <option value="especie">Humano</option>
+                                    <option value="especie">Planta</option>
+                                </select>
+                            </div>
+                            <div class="element">
+                                <p><label>Agregar foto</label></p>
+                                <input type="file" name="imágen" accept=".jpg .png" class="choose_file">
+                            </div>
+                            <div class="element">
+                                <label for="poderes">Poderes</label>
+                                <div class="checkbox">
+                                    <div><input type="checkbox" name="poderes" value="Volar">Volar</div>
+                                    <div><input type="checkbox" name="poderes" value="Superinteligencia">Superinteligencia</div>
+                                    <div><input type="checkbox" name="poderes" value="Vista de rayo láser">Vista de rayo láser</div>
+                                    <div><input type="checkbox" name="poderes" value="Billetera gorda">Billetera gorda</div>
+                                </div>
+                                <br>
+                                <hr>
+                                <div class="element radio">
+                                    <label for="tipo_personaje" class="">Tipo de personaje</label>
+                                    <div class="radio">
+                                        <p><input type="radio" name="tipo_personaje" value="Heroe / Heroina" >Heroe / Heroina</p>
+                                        <p><input type="radio" name="tipo_personaje" value="Villano / Villana">Villano/ Villana</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit">Añadir</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <br><br><br>
+    <footer>
+        <p>Todos los derechos reservados FRONTEND1</p>
+    </footer>
+</body>
+
+</html>

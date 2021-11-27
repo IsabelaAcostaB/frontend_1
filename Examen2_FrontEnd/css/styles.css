@@ -4,6 +4,11 @@
 *{
     font-family: 'Be Vietnam Pro', sans-serif;
     margin: 0;
+
+}
+
+li, li:hover, li:active, li:visited { 
+    color: white; 
 }
 
 @media screen and (max-width: 1400px) { }
@@ -21,6 +26,7 @@
     header nav ul{
         color: #242E52;
         font-weight: 500;
+        list-style: none;
         padding: 0;
         text-decoration: none;
 
@@ -49,7 +55,7 @@
     }
 
 
-/*     Main     */
+{/*     Main     */
 
     /*     Texto y Gráfico principal     */
 
@@ -168,6 +174,9 @@
 
     div.comment_group{
         display: flex;
+        align-content: stretch;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     div.comments {
@@ -226,9 +235,20 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        
     }
 
-    section.orange_bar p{
+    section.orange_bar div{
+        margin: 10%;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section.orange_bar h3{
+        font-size: 32px;
+        font-weight: lighter;
         width: 438px;
     }
 
@@ -239,7 +259,158 @@
     }
 
 
+/*          Footer          */
+
+    /*   Visualizacion general footer   */
+
+    footer{
+        background-color: #1E1E26;
+        height: 247px;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    footer section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;   
+        justify-content: space-around;
+    }
+
+    /*     Logos    */
+
+    section.logos{
+        margin: 2%;
+        width: 154px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    section.logos div{
+        color: white;
+        width: 154px;
+        
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;   
+    }
+
+    section.logos div a i:link{
+        color: white;
+        text-decoration: none;
+    }
+
+    section.logos div a i:visited{
+        color: white;
+        text-decoration: none;
+    }
+
+    section.logos div a i:hover{
+        color: #F3613C;
+    }
+
+    /*     Menu Footer    */
+
+    footer ul{
+        list-style: none;
+    }
+
+    footer section ul li{
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 200%;
+    }
+
+    ul.menu2{
+        margin-bottom: 20%;
+    }
+
+    /*      Formulario Footer y Copy Rights       */
+
+    section.submit_cr{
+        display: inline-flex;
+        align-items: end;
+    }
+
+    section.submit_cr input{
+        border: none;
+        border-radius: 50px;
+        height: 44px;
+        width: 200px;
+    }
+
+    section.submit_cr button{
+        background-color: #F3603B;
+        border:none;
+        border-radius: 50px;
+        color: #FFFFFF;
+        height: 42px;
+        width: 63px;
+
+    }
 
 
+    section.submit_cr p{
+        color: #8C8C94;
+        font-size: 12.5px;
+        font-weight: 500;
+    }
+
+    @media screen and (min-width: 980px) and (max-width:1140px) { 
+    /* Main */
+
+        /*      'What's different' y lista        */
+
+        section.text{
+            margin: 15% 12%;
+    
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        div.text p{
+            margin-bottom: 15%;
+        }   
+
+        /*        Comentarios         */
+
+        div.comments {
+            margin: 5%;
+        }
+
+    }
+}
+
+    @media screen and (min-width: 350px ) and (max-width:979) { 
+        
+    /*Header*/
+        
+
+
+    /*Main*/
+
+
+        section.text{
+                    margin: 15% 12%;
+            
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+
+
+    /*Footer*/
+
+        
+        
+    }
 
 

@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+
+*{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+}
+
+@media screen and (max-width: 1400px) { }
+
+/*   Header    */
+
+    header {
+        margin: 5% 12%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header nav ul{
+        color: #242E52;
+        font-weight: 500;
+        padding: 0;
+        text-decoration: none;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav ul li{
+        font-size: 13px;
+        padding: 14px;
+    }
+
+   .button{
+    background-color: #F3603B;
+    border-radius: 50px;
+    color: #FFFFFF;
+    filter: drop-shadow(0px  4px rgba(0, 0, 0, 0.25));
+    font-size: 13.18px;
+    font-weight: 500;
+    height: 44px;
+    width: 134px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+/*     Main     */
+
+    /*     Texto y Gráfico principal     */
+
+    section.graphic{
+        margin: 10% 12%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    section.graphic div h1{
+        color: #232C50;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 110%;
+        width: 480px;
+    }
+
+    section.graphic div p{
+        font-size: 16.56px;
+        line-height: 156%;
+        margin: 5% 0%;
+        width: 352px;
+    }
+
+    section.graphic img{
+        width:50%
+    }
+
+    section.graphic a{
+        filter: drop-shadow(0px  4px rgba(242, 97, 59, 0.5));
+    }
+
+    /*      'What's different' y lista        */
+
+    
+    section.text{
+        margin: 10% 12%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section.text div h2{
+        color: #232851;
+        font-size: 36px;
+        font-weight: 700;
+        width: 433px;
+    }
+
+    div.text p{
+        color: #000;
+        font-size: 16px;
+        line-height: 151%;
+        margin-top: 7%;
+        width: 337px;
+    }   
+
+    div.num_list div{
+        margin-top: 2%;
+    }
+
+    div.num_list span{
+        background-color: #F3603B;
+        border-radius: 30px;
+        color: #FFFFFF;
+        height: 43px;
+        margin-right: 5%;
+        width: 95px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    div.num_list{
+        display: flex;
+    }
+
+    div.num_list h5{
+        font-size: 16px;
+        font-weight: 700;
+
+    }
+
+    div.num_list p{
+        color: #B3B2B7;
+        font-size: 16.3px;
+        font-weight: 500;
+        height: 104px;
+        line-height: 156%;
+        font-style: normal;
+        margin: 4% 0%;
+        width: 438px;
+    }
+
+    /*        Comentarios         */
+
+    section.comments{
+        margin: 10% 12%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section.comments h2{
+        color: #242E53;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 157%;
+        margin-bottom: 11%;
+    }
+
+    div.comment_group{
+        display: flex;
+    }
+
+    div.comments {
+        background-color: #FAFAFA;
+        height: 219px;
+        width: 445px;
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+       
+    }
+
+    div.comments img{
+        position: relative;
+        top: -19%;
+    }
+
+    div.comments_text{
+        bottom: 4%;
+        position: relative;
+        text-align: center;
+    }
+
+    div.comments span{
+        color: #3F4868;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 157%;
+        margin-bottom: 3%;
+    } 
+
+    div.comments p{
+        color: #B9B9C1;
+        font-size: 16px;
+        line-height: 157%;
+        text-align: center;
+        width: 390px;
+    }
+
+    section.comments a{
+        filter: drop-shadow(0px  5px rgba(242, 97, 59, 0.5));
+        margin-top: 4%;
+        
+    }
+
+    /*      Pre-Footer      */
+
+    section.orange_bar{
+        background-color: #F3613C;
+        color: #FFFFFF;
+        font-size: 40px;
+        font-weight: 700;
+        height: 225px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    section.orange_bar p{
+        width: 438px;
+    }
+
+    section.orange_bar a{
+        background-color: white;
+        color: #F3613C;
+        filter: drop-shadow(0px  5px rgba(0, 0, 0, 0.25));
+    }
+
+
+
+
+
+

@@ -1,17 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
 
 
+
 *{
     font-family: 'Be Vietnam Pro', sans-serif;
     margin: 0;
-
 }
 
-li, li:hover, li:active, li:visited { 
-    color: white; 
-}
-
-@media screen and (max-width: 1400px) { }
 
 /*   Header    */
 
@@ -39,6 +34,10 @@ li, li:hover, li:active, li:visited {
         padding: 14px;
     }
 
+    header i.fas{
+        display: none;
+    }
+
    .button{
     background-color: #F3603B;
     border-radius: 50px;
@@ -55,7 +54,7 @@ li, li:hover, li:active, li:visited {
     }
 
 
-{/*     Main     */
+/*     Main     */
 
     /*     Texto y Gráfico principal     */
 
@@ -265,29 +264,24 @@ li, li:hover, li:active, li:visited {
 
     footer{
         background-color: #1E1E26;
-        height: 247px;
+        height: 250px;
         
         display: flex;
+        align-items: center;
         flex-direction: row;
         justify-content: space-evenly;
     }
 
-    footer section{
-        display: flex;
-        align-items: center;
-        flex-direction: column;   
-        justify-content: space-around;
+    footer section {
+        height: 100%;
     }
 
     /*     Logos    */
 
     section.logos{
-        margin: 2%;
-        width: 154px;
         display: flex;
-        align-items: center;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-evenly;;
     }
 
     section.logos div{
@@ -300,24 +294,23 @@ li, li:hover, li:active, li:visited {
         justify-content: space-between;   
     }
 
-    section.logos div a i:link{
-        color: white;
-        text-decoration: none;
-    }
-
-    section.logos div a i:visited{
-        color: white;
-        text-decoration: none;
-    }
-
-    section.logos div a i:hover{
-        color: #F3613C;
-    }
 
     /*     Menu Footer    */
 
+    footer section.menu{
+            height: 112px;
+            width: 30%;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
     footer ul{
         list-style: none;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     footer section ul li{
@@ -327,15 +320,14 @@ li, li:hover, li:active, li:visited {
         line-height: 200%;
     }
 
-    ul.menu2{
-        margin-bottom: 20%;
-    }
 
     /*      Formulario Footer y Copy Rights       */
 
     section.submit_cr{
         display: inline-flex;
-        align-items: end;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     section.submit_cr input{
@@ -354,7 +346,6 @@ li, li:hover, li:active, li:visited {
         width: 63px;
 
     }
-
 
     section.submit_cr p{
         color: #8C8C94;
@@ -386,31 +377,196 @@ li, li:hover, li:active, li:visited {
         }
 
     }
-}
 
-    @media screen and (min-width: 350px ) and (max-width:979) { 
+    @media screen and (min-width: 350px ) and (max-width:979px) { 
         
     /*Header*/
-        
 
+        div#menu{
+            display: none;
+        }
 
-    /*Main*/
+        header i.fas{
+            display: inline; 
+        }
 
+        header a.button{
+            display: none;
+        }
+
+/*          Main            */
+
+        /*   Texto y Gráfico principal   */
+
+        section.graphic{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        section.graphic img{
+            width: 100%;
+        }
+
+        section.graphic div{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        section.graphic div h1{
+            font-size: 35px;
+            text-align: center;
+            width: 100%;
+        }
+
+        section.graphic div p{
+            color: #B3B2B7;
+            width: 95%;
+            font-size: 17px;
+            text-align: center;
+        }
+
+        /*    'What's different' y lista      */
 
         section.text{
-                    margin: 15% 12%;
-            
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
-                }
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        section.text div h2{
+            font-size: 26px;
+            margin-top: 15%;
+            width: 100%;
+        }
+        
+        div.text p{
+            font-size: 13px;
+            margin-bottom: 17%;
+            width: 100%;
+        }   
+
+        div.num_list span{
+            width: 15%;
+        }
+        
+        div.num_list{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        div.num_list h5{
+            background-color: rgb(255,240,235);
+            font-size: 14px;
+        }
+
+        div.num_list p{    
+            font-size: 12.5px;
+            width: 100%;
+            text-align: left
+        }
 
 
+        /*    Comentarios    */
+
+    section.comments h2{      
+        font-size: 26px;
+        text-align: center;
+    }
+
+    div.comments {
+        margin: 5%;
+        width: 100%;
+    }
+
+    div.comments p{     
+        font-size: 13px;
+        width: 100%;
+    }
+    
+    /*      Pre-Footer      */
+    section.orange_bar {
+        height: 400px;
+    }
+
+    section.orange_bar div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section.orange_bar h3{
+        font-size: 38px;
+        font-weight: lighter;
+        margin-bottom: 5%;
+        text-align: center;
+        width: 100%;
+    }
 
     /*Footer*/
 
-        
-        
+      /*   Visualizacion general footer   */
+
+      footer{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
     }
+
+    /*     Logos    */
+
+    section.logos{
+        flex-direction: column-reverse;
+        order: 3;
+    }
+
+    section.logos div{
+        color: white;
+        width: 154px;
+        
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;   
+    }
+
+
+    /*     Menu Footer    */
+
+    footer ul{
+        list-style: none;
+    }
+
+    footer section.menu{
+        height: 163px;
+        order: 2;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /*      Formulario Footer y Copy Rights       */
+
+
+    .submit_cr form div{
+        order: 4;
+    }
+
+    section.submit_cr div p{
+        order: 4;
+    }
+
+    section.submit_cr div p{
+        align-items: center;
+    }
+}
+
+        
+
+        
+
 
 

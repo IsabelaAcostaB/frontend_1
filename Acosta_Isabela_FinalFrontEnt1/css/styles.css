@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+
+*{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*   Header    */
+
+    header {
+        margin: 3% 12%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header a{
+        color: #242E52;
+    }
+
+    header ul a:hover{
+        color: #c6c7ce;
+    }
+
+    header nav ul{
+        font-weight: 500;
+        list-style: none;
+        padding: 0;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav ul li{
+        font-size: 13px;
+        padding: 14px;
+    }
+    
+    header nav ul li:hover{
+        color: rgb(151, 152, 158);
+    }
+    
+    header i.fas{
+        display: none;
+    }
+
+   .button{
+    background-color: #F3603B;
+    border-radius: 50px;
+    color: #FFFFFF;
+    filter: drop-shadow(0px  4px rgba(0, 0, 0, 0.25));
+    font-size: 13.18px;
+    font-weight: 500;
+    height: 44px;
+    width: 134px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .button:hover{
+        background-color: rgb(245, 163, 135);
+    }
+
+/*     Main     */
+
+    /*     Texto y Gráfico principal     */
+
+    section.graphic{
+        margin: 10% 12%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    section.graphic div h1{
+        color: #232C50;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 110%;
+        width: 480px;
+    }
+
+    section.graphic div p{
+        font-size: 16.56px;
+        line-height: 156%;
+        margin: 5% 0%;
+        width: 352px;
+    }
+
+    section.graphic img{
+        width:50%
+    }
+
+    section.graphic a{
+        color: white;
+        filter: drop-shadow(0px  4px rgba(242, 97, 59, 0.5));
+    }
+
+    /*      'What's different' y lista        */
+
+    
+    section.text{
+        margin: 10% 12%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section.text div h2{
+        color: #232851;
+        font-size: 36px;
+        font-weight: 700;
+        width: 433px;
+    }
+
+    div.text p{
+        color: #000;
+        font-size: 16px;
+        line-height: 151%;
+        margin-top: 7%;
+        width: 337px;
+    }   
+
+    div.num_list div{
+        margin-top: 2%;
+    }
+
+    div.num_list span{
+        background-color: #F3603B;
+        border-radius: 30px;
+        color: #FFFFFF;
+        height: 43px;
+        margin-right: 5%;
+        width: 95px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    div.num_list{
+        display: flex;
+    }
+
+    div.num_list h5{
+        font-size: 16px;
+        font-weight: 700;
+
+    }
+
+    div.num_list p{
+        color: #B3B2B7;
+        font-size: 16.3px;
+        font-weight: 500;
+        height: 104px;
+        line-height: 156%;
+        font-style: normal;
+        margin: 4% 0%;
+        width: 438px;
+    }
+
+    /*        Comentarios         */
+
+    section.comments{
+        margin: 10% 0%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section.comments h2{
+        color: #242E53;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 157%;
+        margin-bottom: 11%;
+    }
+
+    div.comment_group{
+        display: flex;
+        align-content: stretch;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    div.comments {
+        background-color: #FAFAFA;
+        height: 219px;
+        width: 445px;
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+       
+    }
+
+    div.comments img{
+        position: relative;
+        top: -19%;
+    }
+
+    div.comments_text{
+        bottom: 4%;
+        position: relative;
+        text-align: center;
+    }
+
+    div.comments span{
+        color: #3F4868;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 157%;
+        margin-bottom: 3%;
+    } 
+
+    div.comments p{
+        color: #B9B9C1;
+        font-size: 16px;
+        line-height: 157%;
+        text-align: center;
+        width: 390px;
+    }
+
+    section.comments a{
+        filter: drop-shadow(0px  5px rgba(242, 97, 59, 0.5));
+        margin-top: 4%;
+        
+    }
+
+    /*      Pre-Footer      */
+
+    section.orange_bar{
+        background-color: #F3613C;
+        color: #FFFFFF;
+        font-size: 40px;
+        font-weight: 700;
+        height: 225px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+
+    section.orange_bar div{
+        margin: 10%;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section.orange_bar h3{
+        font-size: 32px;
+        font-weight: lighter;
+        width: 438px;
+    }
+
+    section.orange_bar a{
+        background-color: white;
+        color: #F3613C;
+        filter: drop-shadow(0px  5px rgba(0, 0, 0, 0.25));
+    }
+
+    section.orange_bar a:hover{
+        background-color: white;
+        color: rgb(245, 163, 135);
+    }
+
+
+/*          Footer          */
+
+    /*   Visualizacion general footer   */
+
+    footer{
+        background-color: #1E1E26;
+        height: 250px;
+
+        
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    /* footer div {
+        height: 100%;
+    } */
+
+    
+
+    /*     Logos    */
+
+    div.logos{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    div.logos div{
+        color: white;
+        width: 154px;
+        
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;   
+    }
+
+    i:hover{
+        color: #F3603B; 
+    }
+
+    div.logos i:visited{
+        color: white
+    }
+
+
+
+
+    /*     Menu Footer    */
+
+    footer div.menu{
+            height: 112px;
+            width: 30%;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+    footer ul{
+        list-style: none;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    footer div div ul li{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 200%;
+    }
+
+    footer a{
+        color: white;
+    }
+
+    footer a:hover{
+        color:  #F3603B;
+    }
+
+
+    /*      Formulario Footer y Copy Rights       */
+
+    .form-email form{
+        position: absolute;
+        margin-top: -69px;
+        right: 5%;
+    }
+
+    .form-email input{
+        border: none;
+        border-radius: 50px;
+        height: 44px;
+        width: 200px;
+    } 
+
+    .form-email button{
+        background-color: #F3603B;
+        border:none;
+        border-radius: 50px;
+        color: #FFFFFF;
+        height: 42px;
+        width: 63px;
+
+    }
+
+    .form-email button:hover{
+        background-color: rgb(245, 163, 135)
+    }
+
+    .copyright p{
+        color: #8C8C94;
+        font-size: 12.5px;
+        font-weight: 500;
+        text-align: right;
+        
+        position: absolute;
+        margin-top: 40px;
+        right: 5%;
+    }
+
+        
+
+        
+
+    @media screen and (min-width: 980px) and (max-width:1140px) { 
+    /* Main */
+
+        /*      'What's different' y lista        */
+
+        section.text{
+            margin: 15% 12%;
+    
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        div.text p{
+            margin-bottom: 15%;
+        }   
+
+        /*        Comentarios         */
+
+        div.comments {
+            margin: 5%;
+        }
+
+
+        /*      Formulario Footer y Copy Rights       */
+
+        footer div.menu{
+            margin-top: 15%
+        }
+
+    }
+
+    @media screen and (min-width: 350px ) and (max-width:979px) { 
+        
+    /*Header*/
+
+        div#menu{
+            display: none;
+        }
+
+        header i.fas{
+            display: inline; 
+        }
+
+        header a.button{
+            display: none;
+        }
+
+/*          Main            */
+
+        /*   Texto y Gráfico principal   */
+
+        section.graphic{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        section.graphic img{
+            width: 100%;
+        }
+
+        section.graphic div{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        section.graphic div h1{
+            font-size: 35px;
+            text-align: center;
+            width: 100%;
+        }
+
+        section.graphic div p{
+            color: #B3B2B7;
+            width: 95%;
+            font-size: 17px;
+            text-align: center;
+        }
+
+        /*    'What's different' y lista      */
+
+        section.text{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        section.text div h2{
+            font-size: 26px;
+            margin-top: 15%;
+            width: 100%;
+        }
+        
+        div.text p{
+            font-size: 13px;
+            margin-bottom: 17%;
+            width: 100%;
+        }   
+
+        div.num_list span{
+            width: 15%;
+        }
+        
+        div.num_list{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        div.num_list h5{
+            background-color: rgb(255,240,235);
+            font-size: 14px;
+        }
+
+        div.num_list p{    
+            font-size: 12.5px;
+            width: 100%;
+            text-align: left
+        }
+
+
+        /*    Comentarios    */
+
+        section.comments h2{      
+            font-size: 26px;
+            text-align: center;
+        }
+
+        div.comments {
+            margin: 5%;
+            width: 100%;
+        }
+
+        div.comments p{     
+            font-size: 13px;
+            width: 100%;
+        }
+    
+    /*      Pre-Footer      */
+        section.orange_bar {
+            height: 400px;
+        }
+
+        section.orange_bar div{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        section.orange_bar h3{
+            font-size: 38px;
+            font-weight: lighter;
+            margin-bottom: 5%;
+            text-align: center;
+            width: 100%;
+        }
+
+/*Footer*/
+
+        /*   Visualizacion general footer   */
+
+        footer{
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+
+            /*     Logos    */
+
+        div.logos{
+            flex-direction: column-reverse;
+            order: 3;
+        }
+
+        /*     Menu Footer    */
+
+        footer ul{
+            list-style: none;
+        }
+
+        footer div.menu{
+            height: 163px;
+            margin-bottom: 0;
+            margin-top: 26%;
+            order: 2;
+            width: 100%;
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+    /*      Formulario Footer y Copy Rights       */
+
+        .form-email form{
+            position: absolute;
+            margin-top: 4%;
+            right: 20%;
+        }
+
+        .copyright p{
+            position: absolute;
+            margin-top: 453px;
+            width: 100%;
+            text-align: center;
+            
+        }
+
+
+}
+
+        
+
+        
+
+
+

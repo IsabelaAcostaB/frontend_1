@@ -1,29 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
 
 
-
 *{
     font-family: 'Be Vietnam Pro', sans-serif;
     margin: 0;
+}
+
+a{
+    text-decoration: none;
 }
 
 
 /*   Header    */
 
     header {
-        margin: 5% 12%;
+        margin: 3% 12%;
 
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    header nav ul{
+    header a{
         color: #242E52;
+    }
+
+    header ul a:hover{
+        color: #c6c7ce;
+    }
+
+    header nav ul{
         font-weight: 500;
         list-style: none;
         padding: 0;
-        text-decoration: none;
 
         display: flex;
         justify-content: space-between;
@@ -33,7 +42,11 @@
         font-size: 13px;
         padding: 14px;
     }
-
+    
+    header nav ul li:hover{
+        color: rgb(151, 152, 158);
+    }
+    
     header i.fas{
         display: none;
     }
@@ -53,6 +66,9 @@
     justify-content: center;
     }
 
+    .button:hover{
+        background-color: rgb(245, 163, 135);
+    }
 
 /*     Main     */
 
@@ -86,6 +102,7 @@
     }
 
     section.graphic a{
+        color: white;
         filter: drop-shadow(0px  4px rgba(242, 97, 59, 0.5));
     }
 
@@ -156,7 +173,7 @@
     /*        Comentarios         */
 
     section.comments{
-        margin: 10% 12%;
+        margin: 10% 0%;
 
         display: flex;
         align-items: center;
@@ -257,6 +274,11 @@
         filter: drop-shadow(0px  5px rgba(0, 0, 0, 0.25));
     }
 
+    section.orange_bar a:hover{
+        background-color: white;
+        color: rgb(245, 163, 135);
+    }
+
 
 /*          Footer          */
 
@@ -265,6 +287,7 @@
     footer{
         background-color: #1E1E26;
         height: 250px;
+
         
         display: flex;
         align-items: center;
@@ -272,19 +295,22 @@
         justify-content: space-evenly;
     }
 
-    footer section {
+    /* footer div {
         height: 100%;
-    }
+    } */
+
+    
 
     /*     Logos    */
 
-    section.logos{
+    div.logos{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;;
+        height: 100%;
+        justify-content: space-evenly;
     }
 
-    section.logos div{
+    div.logos div{
         color: white;
         width: 154px;
         
@@ -294,10 +320,20 @@
         justify-content: space-between;   
     }
 
+    i:hover{
+        color: #F3603B; 
+    }
+
+    div.logos i:visited{
+        color: white
+    }
+
+
+
 
     /*     Menu Footer    */
 
-    footer section.menu{
+    footer div.menu{
             height: 112px;
             width: 30%;
 
@@ -313,31 +349,37 @@
         flex-wrap: wrap;
     }
 
-    footer section ul li{
-        color: #FFFFFF;
+    footer div div ul li{
         font-size: 16px;
         font-weight: 400;
         line-height: 200%;
     }
 
+    footer a{
+        color: white;
+    }
+
+    footer a:hover{
+        color:  #F3603B;
+    }
+
 
     /*      Formulario Footer y Copy Rights       */
 
-    section.submit_cr{
-        display: inline-flex;
-        align-items: flex-end;
-        flex-direction: column;
-        justify-content: space-evenly;
+    .form-email form{
+        position: absolute;
+        margin-top: -69px;
+        right: 5%;
     }
 
-    section.submit_cr input{
+    .form-email input{
         border: none;
         border-radius: 50px;
         height: 44px;
         width: 200px;
-    }
+    } 
 
-    section.submit_cr button{
+    .form-email button{
         background-color: #F3603B;
         border:none;
         border-radius: 50px;
@@ -347,11 +389,24 @@
 
     }
 
-    section.submit_cr p{
+    .form-email button:hover{
+        background-color: rgb(245, 163, 135)
+    }
+
+    .copyright p{
         color: #8C8C94;
         font-size: 12.5px;
         font-weight: 500;
+        text-align: right;
+        
+        position: absolute;
+        margin-top: 40px;
+        right: 5%;
     }
+
+        
+
+        
 
     @media screen and (min-width: 980px) and (max-width:1140px) { 
     /* Main */
@@ -374,6 +429,13 @@
 
         div.comments {
             margin: 5%;
+        }
+
+
+        /*      Formulario Footer y Copy Rights       */
+
+        footer div.menu{
+            margin-top: 15%
         }
 
     }
@@ -471,97 +533,91 @@
 
         /*    Comentarios    */
 
-    section.comments h2{      
-        font-size: 26px;
-        text-align: center;
-    }
+        section.comments h2{      
+            font-size: 26px;
+            text-align: center;
+        }
 
-    div.comments {
-        margin: 5%;
-        width: 100%;
-    }
+        div.comments {
+            margin: 5%;
+            width: 100%;
+        }
 
-    div.comments p{     
-        font-size: 13px;
-        width: 100%;
-    }
+        div.comments p{     
+            font-size: 13px;
+            width: 100%;
+        }
     
     /*      Pre-Footer      */
-    section.orange_bar {
-        height: 400px;
-    }
+        section.orange_bar {
+            height: 400px;
+        }
 
-    section.orange_bar div{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
+        section.orange_bar div{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
 
-    section.orange_bar h3{
-        font-size: 38px;
-        font-weight: lighter;
-        margin-bottom: 5%;
-        text-align: center;
-        width: 100%;
-    }
+        section.orange_bar h3{
+            font-size: 38px;
+            font-weight: lighter;
+            margin-bottom: 5%;
+            text-align: center;
+            width: 100%;
+        }
 
-    /*Footer*/
+/*Footer*/
 
-      /*   Visualizacion general footer   */
+        /*   Visualizacion general footer   */
 
-      footer{
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-    }
+        footer{
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+        }
 
-    /*     Logos    */
+            /*     Logos    */
 
-    section.logos{
-        flex-direction: column-reverse;
-        order: 3;
-    }
+        div.logos{
+            flex-direction: column-reverse;
+            order: 3;
+        }
 
-    section.logos div{
-        color: white;
-        width: 154px;
-        
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;   
-    }
+        /*     Menu Footer    */
 
+        footer ul{
+            list-style: none;
+        }
 
-    /*     Menu Footer    */
+        footer div.menu{
+            height: 163px;
+            margin-bottom: 0;
+            margin-top: 26%;
+            order: 2;
+            width: 100%;
 
-    footer ul{
-        list-style: none;
-    }
-
-    footer section.menu{
-        height: 163px;
-        order: 2;
-        width: 100%;
-
-        display: flex;
-        justify-content: space-around;
-    }
+            display: flex;
+            justify-content: space-around;
+        }
 
     /*      Formulario Footer y Copy Rights       */
 
+        .form-email form{
+            position: absolute;
+            margin-top: 4%;
+            right: 20%;
+        }
 
-    .submit_cr form div{
-        order: 4;
-    }
+        .copyright p{
+            position: absolute;
+            margin-top: 453px;
+            width: 100%;
+            text-align: center;
+            
+        }
 
-    section.submit_cr div p{
-        order: 4;
-    }
 
-    section.submit_cr div p{
-        align-items: center;
-    }
 }
 
         
